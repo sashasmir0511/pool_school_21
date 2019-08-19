@@ -16,9 +16,9 @@
 typedef struct 		s_map
 {
 	unsigned int	size;
-	char			empty;
-	char			obstacle;
-	char			full;
+	char			*empty;
+	char			*obstacle;
+	char			*full;
 	int				**map;
 }					t_map;
 void				bsq(t_map *mp);

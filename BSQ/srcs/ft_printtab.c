@@ -24,11 +24,11 @@ void	ft_printtab(t_map *mp)
 		while (j < mp->size)
 		{
 			if (mp->map[i][j] == 0)
-				ft_putchar(mp->obstacle);
+				ft_putchar(*mp->obstacle);
 			else if (mp->map[i][j] == -2)
-				ft_putchar(mp->full);
+				ft_putchar(*mp->full);
 			else
-				ft_putchar(mp->empty);
+				ft_putchar(*mp->empty);
 			j++;
 		}
 		i++;
