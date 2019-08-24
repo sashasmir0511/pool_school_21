@@ -10,8 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
+
 void	build_floor(int num_while, int star, int space);
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 int		count_star(int floor)
 {
